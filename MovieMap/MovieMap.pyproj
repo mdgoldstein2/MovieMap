@@ -28,6 +28,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="MovieMap\access.py" />
     <Compile Include="runserver.py" />
     <Compile Include="MovieMap\__init__.py" />
     <Compile Include="MovieMap\views.py" />
@@ -41,6 +42,7 @@
     <Folder Include="MovieMap\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MovieMap\templates\test.html" />
     <Content Include="requirements.txt" />
     <Content Include="MovieMap\static\content\bootstrap.css" />
     <Content Include="MovieMap\static\content\bootstrap.min.css" />

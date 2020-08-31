@@ -5,6 +5,7 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import render_template
 from MovieMap import app
+from access import getMovie
 
 @app.route('/')
 @app.route('/home')
@@ -43,16 +44,7 @@ def test():
         'test.html',
         title='Test',
         year=datetime.now().year,
-        message='Your application description page.'
+        message='Your application test page.',
+        success = getMovie(500)
     )
 
-@app.route('/api')
-def apiTestPage():
-    """
-    A test page for fetching info from TMDB API
-    """
-
-    return render_template(
-        
-        
-        )
