@@ -35,3 +35,14 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@app.route('/test')
+def test():
+    """Renders a test page."""
+    return render_template(
+        'test.html',
+        title='Test',
+        year=datetime.now().year,
+        message='Your application description page.'
+    )
+
