@@ -46,3 +46,13 @@ def test():
         message='Your application description page.'
     )
 
+@app.route('/api')
+def apiTestPage():
+    """
+    A test page for fetching info from TMDB API
+    """
+
+    return render_template(
+        
+        
+        )
